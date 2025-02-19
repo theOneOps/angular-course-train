@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ title }} {{ counter() }}</h1>
+  
+  <app-button *ngIf="isOnTasksPage"
+    (click)="toggleForm()"
+    [color]="isClosed ? 'crimson' : 'green'" 
+    [text]="isClosed ? 'Add' : 'Close'" 
+  ></app-button>
+</header>

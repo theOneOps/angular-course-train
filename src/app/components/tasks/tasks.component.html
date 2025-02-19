@@ -1,0 +1,11 @@
+<app-add-task (saveTask)="postTask($event)"></app-add-task>
+<app-task-item
+  *ngFor="let task of tasks; trackBy: trackById"
+  [task]="task"
+  (deleteTask)="deleteTaskFunc(task)"
+  (updateTask)="updateTaskReminder(task)"
+></app-task-item>
+
+<div class="links">
+  <a routerLink="/">Go Back</a>
+</div>

@@ -1,0 +1,6 @@
+<div class="task" [class.reminder]="task?.reminder" (dblclick)="onUpdate(task!)">
+    <h3>
+      {{ task?.text }} <fa-icon (click)="onDelete(task!)" style="color: red;" [icon]="faTimes"></fa-icon>
+    </h3>
+    <p>{{ task?.day }}</p>
+</div>
